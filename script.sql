@@ -97,6 +97,18 @@ FROM Branch
 WHERE city = "London" OR city = "Glasgow";
 
 -- Question 6
-SELECT 
-FROM
-WHERE
+SELECT *
+FROM Staff
+WHERE salary BETWEEN 20000 AND 30000;
+
+-- Question 7
+SELECT * 
+FROM Viewing
+WHERE propertyNo = "PG4" AND comments = "null";
+
+-- Question 8
+SELECT COUNT(clientNo)
+FROM viewing
+WHERE viewDate = "2001-05";
+
+-- Question 9 
