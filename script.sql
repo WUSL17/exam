@@ -64,3 +64,10 @@ CREATE TABLE Registration(
     staffNo VARCHAR(5),
     dateJoined DATE
 );
+
+Load data local infile "Z:/CMIS 2123 -DBMS/Tables/branch.csv" into table Branch CHARACTER SET 'utf8' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 0 LINES;
+Load data local infile "Z:/CMIS 2123 -DBMS/Tables/client.csv" into table Client CHARACTER SET 'utf8' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 0 LINES;
+Load data local infile "Z:/CMIS 2123 -DBMS/Tables/privateowner.csv" into table PrivateOwner CHARACTER SET 'utf8' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 0 LINES;
+Load data local infile "Z:/CMIS 2123 -DBMS/Tables/propertyforrent.csv" into table PropertyForRent CHARACTER SET 'utf8' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 0 LINES;
+Load data local infile "Z:/CMIS 2123 -DBMS/Tables/registration.csv" into table Registration CHARACTER SET 'utf8' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 0 LINES;
+Load data local infile "Z:/CMIS 2123 -DBMS/Tables/Staff.csv" into table Staff CHARACTER SET 'utf8' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 0 LINES;
