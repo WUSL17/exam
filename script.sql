@@ -71,3 +71,32 @@ Load data local infile "Z:/CMIS 2123 -DBMS/Tables/privateowner.csv" into table P
 Load data local infile "Z:/CMIS 2123 -DBMS/Tables/propertyforrent.csv" into table PropertyForRent CHARACTER SET 'utf8' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 0 LINES;
 Load data local infile "Z:/CMIS 2123 -DBMS/Tables/registration.csv" into table Registration CHARACTER SET 'utf8' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 0 LINES;
 Load data local infile "Z:/CMIS 2123 -DBMS/Tables/Staff.csv" into table Staff CHARACTER SET 'utf8' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 0 LINES;
+Load data local infile "Z:/CMIS 2123 -DBMS/Tables/viewing.csv" into table Viewing CHARACTER SET 'utf8' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 0 LINES;
+
+-- Question 1
+SELECT staffNo, fName, lName, salary
+FROM Staff;
+
+-- Question 2
+SELECT propertyNo
+FROM Viewing;
+
+-- Question 3 
+SELECT staffNo, fName, lName
+FROM Staff
+WHERE position = "Manager" OR position = "Supervisor";
+
+-- Question 4
+SELECT *
+FROM PrivateOwner
+WHERE address LIKE "%Glasgow%";
+
+-- Question 5
+SELECT *
+FROM Branch
+WHERE city = "London" OR city = "Glasgow";
+
+-- Question 6
+SELECT 
+FROM
+WHERE
