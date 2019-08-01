@@ -26,7 +26,7 @@ CREATE TABLE PrivateOwner(
 );
 
 CREATE TABLE PropertyForRent(
-    propertyNo VARCHAR(5),
+    propertyNo VARCHAR(5) PRIMARY KEY,
     street VARCHAR(50),
     city VARCHAR(50),
     postcode VARCHAR(50),
@@ -48,4 +48,19 @@ CREATE TABLE Client(
     telNo VARCHAR(15),
     prefType VARCHAR(10),
     maxRent REAL
+);
+
+CREATE TABLE Viewing(
+    clientNo VARCHAR(5),
+    propertyNo VARCHAR(5),
+    viewDate DATE,
+    comments VARCHAR(100),
+    PRIMARY KEY(clientNo, propertyNo)
+);
+
+CREATE TABLE Registration(
+    clientNo VARCHAR(5),
+    branchNo VARCHAR(5),
+    staffNo VARCHAR(5),
+    dateJoined DATE
 );
